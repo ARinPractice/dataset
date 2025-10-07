@@ -78,8 +78,8 @@ NAVBAR
 
 					</br>
 
-					<h5><strong>Solutions to architectural problems</strong></h5>
-					<img src="./images/RQ3.png" >
+					<!--<h5><strong>Solutions to architectural problems</strong></h5>
+					<img src="./images/RQ3.png" >-->
 
 					</br>
 					</br>
@@ -96,6 +96,26 @@ NAVBAR
 						data access layer, which reduces direct dependencies.
 						<div style="text-align: center">
 						<img src="./images/ModuleProblem.png" width="200px">
+						</div>
+
+					</br>
+					</br>
+					
+					
+					<h5><strong>Class Design Problem.</strong>
+					</br>
+						Example: In post #30781444, the application's controller class
+						contains too many methods, making it bloated. This raises a demand
+						to refactor it to follow the Single Responsibility Principle. The
+						solution is as follows: 1) Analyzing the Controller Class: assess all
+						the action methods in the controller class to identify different sets of
+						functionalities; 2) Logical Grouping: group related action methods
+						together, where each group handles a specific type of functionality
+						or business logic; 3) Creating Independent Controllers: For each
+						logical group, a new controller class is created, dedicated to a set of
+						specific action methods and corresponding business logic.
+						<div style="text-align: center">
+						<img src="./images/ClassDesignProblem.png" width="400px">
 						</div>
 
 					</br>
@@ -118,27 +138,8 @@ NAVBAR
 
 					</br>
 					</br>
-					
-					<h5><strong>Class Design Problem.</strong>
-					</br>
-						Example: In post #30781444, the application's controller class
-						contains too many methods, making it bloated. This raises a demand
-						to refactor it to follow the Single Responsibility Principle. The
-						solution is as follows: 1) Analyzing the Controller Class: assess all
-						the action methods in the controller class to identify different sets of
-						functionalities; 2) Logical Grouping: group related action methods
-						together, where each group handles a specific type of functionality
-						or business logic; 3) Creating Independent Controllers: For each
-						logical group, a new controller class is created, dedicated to a set of
-						specific action methods and corresponding business logic.
-						<div style="text-align: center">
-						<img src="./images/ClassDesignProblem.png" width="400px">
-						</div>
 
-					</br>
-					</br>
-					
-					<h5><strong>Circular Dependency.</strong>
+					<h5><strong>Cyclic Dependency.</strong>
 					</br>
 						Example: Post #2981750 discussed how to refactor a large messy
 						codebase. The codebase has problems such as single classes taking
@@ -170,7 +171,7 @@ NAVBAR
 					</br>
 					</br>
 
-					<h5><strong>Inappropriate Architecture.</strong>
+					<h5><strong>Requirements-Architecture Mismatch.</strong>
 					</br>
 						Example: As shown in post #11118030, due to the increase in new
 						demands, inappropriate architecture causes a lack of scalability of
@@ -188,7 +189,7 @@ NAVBAR
 					</br>
 					</br>
 
-					<h5><strong>System Complexity.</strong>
+					<h5><strong>High Architectural Complexity.</strong>
 					</br>
 						Example: The post #8599036 says that as the project grows in
 						size, code becomes difficult to manage and maintain. Without clear
@@ -291,7 +292,7 @@ NAVBAR
 					</br>
 					</br>
 
-					<h5><strong>Difficulty in Testing.</strong>
+					<h5><strong>Low Testability.</strong>
 					</br>
 					Example: Post #45468867 shows the problem of how to efficiently
 					test the barely testable legacy code base. The solution to this problem: 1) Identify and Create Seams: find relatively independent
